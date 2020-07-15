@@ -1,3 +1,16 @@
+<?php
+
+if( !isset($_GET["nama"]) ||
+    !isset($_GET["nrp"]) ||
+    !isset($_GET["email"]) ||
+    !isset($_GET["jurusan"]) ||
+    !isset($_GET["gambar"])) {
+    //redirect
+    header("Location: latihan1.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +21,7 @@
 <body>
 
 <ul>
-    <li><img src="img/<?= $mhs["gambar"]; ?>"></li>
+    <li><img src="img/<?= $_GET["gambar"]; ?>"></li>
     <li><?= $_GET["nama"]; ?></li>
     <li><?= $_GET["nrp"]; ?></li>
     <li><?= $_GET["email"]; ?></li>

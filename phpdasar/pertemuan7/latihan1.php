@@ -39,7 +39,7 @@ $mahasiswa = [
 <ul>
 <?php foreach ( $mahasiswa as $mhs ) : ?>
     <li>
-        <a href="latihan2.php?nama=<?= $mhs["nama"]; ?>&nrp=<?= $mhs["nrp"] ;?>&email=<?= $mhs["email"] ?>&jurusan=<?= $mhs["jurusan"]; ?>&gambar<?= $mhs["gambar"]; ?>"><?= $mhs["nama"]; ?></a>
+        <a href="latihan2.php?nama=<?= $mhs["nama"]; ?>&nrp=<?= $mhs["nrp"] ;?>&email=<?= $mhs["email"] ?>&jurusan=<?= $mhs["jurusan"]; ?>&gambar=<?= $mhs["gambar"]; ?>"><?= $mhs["nama"]; ?></a>
     </li>
 <?php endforeach; ?>
 </ul>
