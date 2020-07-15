@@ -1,8 +1,11 @@
 <?php
-// superglobals
-// variabel global milik php
-// merupakan array associative
-var_dump($_SERVER);
-echo $_SERVER["SERVER_NAME"];
+// $_GET
+
+// $_GET["nama"] = "Reza Muhammad";
+// $_GET["nrp"] = "123040224";
+
+var_dump($_GET);
+
+
 
 ?>
