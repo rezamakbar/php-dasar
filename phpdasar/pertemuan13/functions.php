@@ -110,6 +110,7 @@ function ubah ($data) {
     } else {
         $gambar = upload();
     }
+    
     $query = "UPDATE mahasiswa SET
                 nama = '$nama',
                 nrp = '$nrp',
