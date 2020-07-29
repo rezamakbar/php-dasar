@@ -24,7 +24,7 @@ function tambah($data) {
         // query insert data
     $query = "INSERT INTO mahasiswa
                 VALUES
-                ('', '$nama', '$nrp', '$email' ,'jurusan', 'gambar')
+                ('', '$nama', '$nrp', '$email' ,'$jurusan', '$gambar')
                 ";
     mysqli_query($conn, $query);
 
@@ -38,8 +38,3 @@ function hapus ($id) {
     return mysqli_affected_rows($conn);
 
 }
-
-
-
-
-?>
